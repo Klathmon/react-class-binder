@@ -27,7 +27,7 @@ export default (Super) => class extends Super {
         // So let's get it's properties, and set them all to bind on this!
         for (let methodName of Object.getOwnPropertyNames(prototype)) {
           // Don't bother binding any methods that don't need it...
-          if (!!~methodsToIgnore.indexOf(methodName)) continue
+          if (!!~methodsToIgnore.indexOf(methodName)) continue // eslint-disable-line no-extra-boolean-cast
 
           this[methodName] = prototype[methodName].bind(this)
         }
