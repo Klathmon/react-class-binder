@@ -1,0 +1,34 @@
+{
+  "name": "react-class-binder",
+  "version": "0.0.1",
+  "description": "Automatically binds React method when using plain ES6 classes",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Klathmon/react-class-binder.git"
+  },
+  "standard": {
+    "parser": "babel-eslint"
+  },
+  "babel": {
+    "presets": [
+      "es2015"
+    ]
+  },
+  "author": "Gregory Benner <gregbenner1@gmail.com> (https://github.com/Klathmon)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Klathmon/react-class-binder/issues"
+  },
+  "homepage": "https://github.com/Klathmon/react-class-binder#readme",
+  "devDependencies": {
+    "babel-cli": "6.10.1",
+    "babel-eslint": "6.0.4",
+    "babel-preset-es2015": "6.9.0",
+    "rimraf": "2.5.2",
+    "standard": "7.1.2"
+  }
+}
