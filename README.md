@@ -73,7 +73,7 @@ One of them required decorators, which was a no-start because I'm trying to avoi
 `react-class-binder` does all binding when the object is instantiated (in React, this is basically the componentWillMount lifecycle method). That is the only place that will take longer when using this package, and even that is so small that I can't reliably measure it.
 
 ## Inspiration & Thanks
-* Thanks to [`react-autobind`](https://github.com/cassiozen/React-autobind) and [Autobind Decorator](https://github.com/andreypopp/autobind-decorator) for the idea, and for helping me figure out the edge cases I'd need to solve.
+* Thanks to [`react-autobind`](https://github.com/cassiozen/React-autobind) and [`autobind-decorator`](https://github.com/andreypopp/autobind-decorator) for the idea, and for helping me figure out the edge cases I'd need to solve.
 * Thanks to Dr. Axel Rauschmayer of [②ality.com](http://www.2ality.com/) for the "mixins" idea.
 
 ## Contributing
