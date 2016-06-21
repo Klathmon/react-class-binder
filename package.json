@@ -2,7 +2,7 @@
   "name": "react-class-binder",
   "version": "1.0.1",
   "description": "Automatically binds React method when using plain ES6 classes",
-  "main": "lib/index.js",
+  "main": "./lib",
   "scripts": {
     "test": "mocha --recursive --compilers js:babel-register ./test/*",
     "clean": "rimraf lib",
