@@ -1,6 +1,6 @@
 {
   "name": "react-class-binder",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Automatically binds React method when using plain ES6 classes",
   "main": "./lib",
   "scripts": {
