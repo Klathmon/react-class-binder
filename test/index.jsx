@@ -40,6 +40,5 @@ describe('binder mixin', () => {
 
     const extendedThis = component.testThis()
     expect(extendedThis).to.not.include('testThis')
-    expect(extendedThis).to.include('reverseText')
   })
 })
