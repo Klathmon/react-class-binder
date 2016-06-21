@@ -3,7 +3,7 @@ import jsdom from 'mocha-jsdom'
 import { expect } from 'chai'
 import { renderIntoDocument } from 'react-addons-test-utils'
 
-class ReverseP extends React.AutobindComponent {
+class ReverseP extends React.BinderComponent {
   static propTypes = {
     text: React.PropTypes.string.isRequired
   }
@@ -24,7 +24,7 @@ class ExtendedReverseP extends ReverseP {
    }
 }
 
-describe('AutobindComponent Extended Class', () => {
+describe('BinderComponent Extended Class', () => {
   jsdom()
 
   it('renders without errors', () => {
