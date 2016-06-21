@@ -1,6 +1,6 @@
-import { Component } from 'react'
+import React from 'react'
 import binder from './index'
 
-export * from 'react'
+React.AutobindComponent = class AutobindComponent extends binder(React.Component, 4) {}
 
-export class AutobindComponent extends binder(Component) {}
+export default React
