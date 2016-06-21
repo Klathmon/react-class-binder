@@ -13,8 +13,8 @@ const methodsToIgnore = [
 ]
 
 export default (Super) => class extends Super {
-  constructor () {
-    super()
+  constructor (...args) {
+    super(...args)
     let prototype = this
     // keep walking back the prototype chain until we find the "important" one
     // The "important" one is the one right before this one, which is 2 before React's `Component`
