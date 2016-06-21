@@ -29,6 +29,21 @@ export default class ComponentName extends binder(React.Component) {
 
 No other configuration or options are needed! `react-class-binder` will only bind what is absolutely necessary, so it won't touch React related method, nor will it rebind any method on any class that extends your class. So any libraries which use inheritance or higher-order-components will work fine with `react-class-binder` (Including [`react-css-modules`](https://github.com/gajus/react-css-modules) and [`radium`](https://github.com/FormidableLabs/radium))!
 
+#### Alternate-Usage:
+
+I also added (starting with version 1.1.0) a second way to use this if you don't want to import `react-class-binder` in each method. It replaces the `React` import with one that has `BinderComponent` added to it. So you can use it like this:
+
+```js
+import React from 'react-class-binder/react'
+
+export default class ComponentName extends React.BinderComponent {
+  // ...component stuff here
+}
+```
+
+Everything else is exactly the same. Please note that this method should be consitered **beta** as I haven't used it as extensively as I've used the mixin method.
+
+
 ## Full Example
 
 ```js
