@@ -20,6 +20,7 @@ This package uses a cool trick with ES2015 classes to make it extremely easy to 
 ```js
 import React from 'react'
 import binder from 'react-class-binder'
+// If using require, do `var binder = require('react-class-binder').default`
 
 export default class ComponentName extends binder(React.Component) {
   // ...component stuff here
